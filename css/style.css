@@ -1,0 +1,256 @@
+html {
+  font-size: 0.9rem;
+}
+
+body {
+  color: #2B3137;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2B3137;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #24292E;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.header-logo {
+  line-height: 1px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 270px;
+}
+
+header h1 img {
+  width: 120px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 30px;
+}
+
+header nav ul li img {
+  width: 20px;
+}
+
+.mainvisual {
+  margin-bottom: 80px;
+}
+
+.mainvisual img {
+  height: 420px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: top;
+}
+
+#about {
+  margin-bottom: 130px;
+}
+
+#about ul li:first-child, #about :last-child {
+  margin-bottom: 30px;
+}
+
+#works {
+  margin-bottom: 130px;
+}
+
+#works .works-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#works .works-image img {
+  width: 31%;
+  margin-bottom: 30px;
+}
+
+#news {
+  margin-bottom: 130px;
+}
+
+#news dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: solid 1px #C8C8C8;
+}
+
+#news dl dt, #news dl dd {
+  padding: 15px;
+  border-top: solid 1px #C8C8C8;
+}
+
+#news dt {
+  width: 20%;
+}
+
+#news dd {
+  width: 80%;
+}
+
+#contact {
+  margin-bottom: 130px;
+}
+
+#contact dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 20px;
+}
+
+#contact dl dd {
+  padding: 10px;
+  border: solid 1px #C8C8C8;
+  width: 85%;
+  margin-bottom: 10px;
+}
+
+#contact dl dt {
+  width: 15%;
+}
+
+.button {
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  padding: 15px 0;
+  background-color: #24292E;
+  color: white;
+}
+
+footer {
+  font-size: 10px;
+  background-color: #24292E;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .section-title {
+    margin-bottom: 40px;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+  header h1 {
+    padding: 20px 0 0 0;
+  }
+  header nav ul {
+    padding: 10px 0;
+    font-size: 12.8px;
+  }
+  header nav ul li {
+    margin-left: 20px;
+  }
+  header nav ul li:first-child {
+    margin-left: 0;
+  }
+  #about {
+    margin-bottom: 70px;
+  }
+  #works {
+    margin-bottom: 70px;
+  }
+  #works .works-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #works .works-image img {
+    width: 100%;
+    margin-bottom: 23px;
+  }
+  #news {
+    margin-bottom: 70px;
+  }
+  #news dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  #news dl dt {
+    padding-bottom: 0;
+    width: 100%;
+  }
+  #news dl dd {
+    border: none;
+    padding-top: 0;
+    width: 100%;
+  }
+  #contact {
+    margin-bottom: 70px;
+  }
+  #contact dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0 0 20px;
+  }
+  #contact dl dd {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

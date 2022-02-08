@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+html {
+  font-size: 0.9rem;
+}
+
+body {
+  color: #2B3137;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2B3137;
+
+}
+
+img {
+  max-width: 100%;
+}
+// ---------------------------------------
+//                 common
+// ---------------------------------------
+.container {
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+.section-title {
+  color: #24292E;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+.header-logo {
+  line-height: 1px;
+}
+
+// ---------------------------------------
+//                 header
+// ---------------------------------------
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 270px;
+  // border: solid 1px #111;
+  
+  h1 img {
+    width: 120px;
+  }
+  nav ul {
+    display: flex;
+    li {
+      margin-left: 30px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+}
+
+// ---------------------------------------
+//                 mainvisual
+// ---------------------------------------
+.mainvisual {
+  margin-bottom: 80px;
+  img {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: top;
+  }
+}
+
+// ---------------------------------------
+//                 about
+// ---------------------------------------
+#about {
+  margin-bottom: 130px;
+
+
+  ul li:first-child, :last-child {
+    margin-bottom: 30px;
+  }
+}
+// ---------------------------------------
+//                 works
+// ---------------------------------------
+#works {
+  margin-bottom: 130px;
+  .works-image {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img{
+      width: 31%;
+      margin-bottom: 30px;
+  
+    }
+  }
+}
+// ---------------------------------------
+//                 news
+// ---------------------------------------
+#news {
+  margin-bottom: 130px;
+
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid 1px #C8C8C8;
+
+    dt, dd {
+      padding: 15px;
+      border-top: solid 1px #C8C8C8;
+    }
+    }
+    dt {
+      width: 20%;
+    }
+    dd {
+      width: 80%;
+    }
+  }
+
+// ---------------------------------------
+//                 contact
+// ---------------------------------------
+#contact {
+  margin-bottom: 130px;
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 20px;
+    dd {
+      padding: 10px;
+      border: solid 1px #C8C8C8;
+      width: 85%;
+      margin-bottom: 10px;
+    }
+    dt {
+      width: 15%;
+    }
+  }
+}
+.button {
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  padding: 15px 0;
+  background-color: #24292E;
+  color: white;
+}
+// ---------------------------------------
+//                 footer
+// ---------------------------------------
+footer {
+  font-size: 10px;
+  background-color: #24292E;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+// sp //
+@media screen and (max-width: 600px) {
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto; //通常のheightが270pxなのでそれを解除//
+    h1 {
+      padding: 20px 0 0 0;
+    }
+    nav ul {
+      padding: 10px 0;
+      font-size: 12.8px;
+      li {
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  // ---------------------------------------
+  //                 about
+  // ---------------------------------------
+  #about {
+    margin-bottom: 70px;
+  }
+  // ---------------------------------------
+  //                 works
+  // ---------------------------------------
+  #works {
+    margin-bottom: 70px;
+    .works-image {
+      flex-direction: column;
+      img{
+        width: 100%;
+        margin-bottom: 23px;
+    
+      }
+    }
+  }
+  // ---------------------------------------
+  //                 news
+  // ---------------------------------------
+
+  #news {
+    margin-bottom: 70px;
+
+    dl {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      dt {
+        padding-bottom: 0;
+        width: 100%;
+      }
+      dd {
+        border: none;
+        padding-top: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  // ---------------------------------------
+  //                 contact
+  // ---------------------------------------
+
+  #contact {
+    margin-bottom: 70px;
+    dl {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin: 0 0 20px;
+      dd {
+        width: 100%;
+      }
+    }
+  }
+}
